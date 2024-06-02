@@ -64,35 +64,35 @@
             <ul class="container-flex lista-veiculos">
                 <li>
                     <img src="./images/mercedes.jpg" alt="Imagem de um carro Mercedes Bens">
-                    <h3>Carro Mercedes-Bens</h3>
+                    <h3>Mercedes-Bens</h3>
                     <p>Câmbio automático, 2 portas, vidros elétricos, modelo AMG</p>
                     <strong>R$ 350.000,00</strong>
                     <button type="button">Tenho interesse</button>
                 </li>
                 <li class="item-central">
                     <img src="./images/mercedes.jpg" alt="Imagem de um carro Mercedes Bens">
-                    <h3>Carro Mercedes-Bens</h3>
+                    <h3>Porsche Panamera</h3>
                     <p>Câmbio automático, 2 portas, vidros elétricos, modelo AMG</p>
                     <strong>R$ 350.000,00</strong>
                     <button type="button">Tenho interesse</button>
                 </li>
                 <li>
                     <img src="./images/mercedes.jpg" alt="Imagem de um carro Mercedes Bens">
-                    <h3>Carro Mercedes-Bens</h3>
+                    <h3>BMW M3</h3>
                     <p>Câmbio automático, 2 portas, vidros elétricos, modelo AMG</p>
                     <strong>R$ 350.000,00</strong>
                     <button type="button">Tenho interesse</button>
                 </li>
                 <li>
                     <img src="./images/mercedes.jpg" alt="Imagem de um carro Mercedes Bens">
-                    <h3>Carro Mercedes-Bens</h3>
+                    <h3>Lamborguini</h3>
                     <p>Câmbio automático, 2 portas, vidros elétricos, modelo AMG</p>
                     <strong>R$ 350.000,00</strong>
                     <button type="button">Tenho interesse</button>
                 </li>
                 <li class="item-central">
                     <img src="./images/mercedes.jpg" alt="Imagem de um carro Mercedes Bens">
-                    <h3>Carro Mercedes-Bens</h3>
+                    <h3>Ferrari Enzo</h3>
                     <p>Câmbio automático, 2 portas, vidros elétricos, modelo AMG</p>
                     <strong>R$ 350.000,00</strong>
                     <button type="button">Tenho interesse</button>
@@ -157,7 +157,7 @@
             </ul>
         </div>
     </section>
-    <section>
+    <section id="contato">
         <div class="container">
             <h2>Entre em contato</h2>
             <form>
@@ -179,7 +179,7 @@
                 </div>
                 <div class="form-campo">
                     <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="msg"></textarea>
+                    <textarea id="mensagem" name="msg" placeholder="Envie uma mensagem para entendermos melhor o que você está procurando"></textarea>
                 </div>
                 <button type="submit">Enviar</button>
             </form>
@@ -214,36 +214,8 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/messages_pt_BR.min.js"></script>
-    
-    <script>
-        $(document).ready(function(){
-            $('#carousel-images').slick({
-                autoplay: true
-            });
-            $('.menu-traco').click(function(){
-                $('nav').slideToggle();
-            })
-            $('#telefone').mask('( 00 ) 00000 - 0000')
-
-            $('form').validate({
-                    rules: {
-                        nome:{
-                            required: true
-                    },
-                        email: {
-                            required: true,
-                            email: true
-                    },
-                        telefone: {
-                            required: true
-                    }
-                },
-                messages: {
-                    nome:'Por favor, insira o seu nome'
-                }
-            })
-        })
-    </script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
